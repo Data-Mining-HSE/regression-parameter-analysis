@@ -20,6 +20,8 @@ class Trainer:
         self._metric = metric
 
     def train(self) -> list[float]:
+        self._model.train()
+        
         epoch_loss_hist = []
         for epoch in range(self._num_epochs):
             
@@ -55,6 +57,8 @@ class Trainer:
     
     @torch.inference_mode()
     def eval(self) -> float:
+        self._model.eval()
+
         for data, labels in self._test_loader:
             pred_y = self._model(data)
             self._metric.update(pred_y, labels)
