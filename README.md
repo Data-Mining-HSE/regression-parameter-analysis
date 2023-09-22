@@ -1,4 +1,4 @@
-# Regression Parameter Analysis
+# Machine Learning analysis of Abalone dataset
 
 ## Get a data
 ```bash
@@ -17,4 +17,13 @@ popd
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+export PYTHONPATH=$PYTHONPATH:$(pwd)
 ```
+
+## Regression Parameter Analysis
+
+See `regression_parameter_analysis.ipynb`
+
+## Gradient Descent Analysis
+
+See `gradient_descent.ipynb`

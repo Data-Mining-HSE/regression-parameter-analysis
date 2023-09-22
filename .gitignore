@@ -1,3 +1,6 @@
 venv
 .vscode
 data/abalone
+.env
+src/linear_model.py
+*DS_Store
